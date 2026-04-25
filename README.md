@@ -80,22 +80,63 @@ The analysis focuses on cleaning multi-source datasets, building user-level metr
 
 ### Featured Visualizations
 
-#### Distribution of User Behavior
-Histograms were used to analyze the distribution of:
-- Age
-- Messages
-- Calls
-- Call minutes
+#### 1. Age Distribution by Plan  
+This histogram shows the distribution of user ages segmented by plan type. The visualization helps assess whether age influences plan selection and highlights the overall demographic spread of users.
 
-These visualizations revealed right-skewed distributions in usage variables, indicating the presence of high-usage users.
+![Age Distribution](assets/age_distribution.png)
 
-#### Outlier Detection
-Boxplots highlighted extreme values in:
-- Messages
-- Calls
-- Call minutes
+---
 
-These outliers represent heavy users and were retained for analysis.
+#### 2. Messages Distribution by Plan  
+This histogram illustrates the number of messages sent by users across different plans. The distribution is right-skewed, indicating that most users send a moderate number of messages, while a smaller group exhibits higher messaging activity.
+
+![Messages Distribution](assets/messages_distribution.png)
+
+---
+
+#### 3. Calls Distribution by Plan  
+This visualization presents the distribution of call counts per user. It reveals that most users make a moderate number of calls, with some higher-usage users creating a slight right skew in the data.
+
+![Calls Distribution](assets/calls_distribution.png)
+
+---
+
+#### 4. Call Minutes Distribution by Plan  
+This histogram highlights the distribution of total call minutes per user. The strong right skew indicates the presence of high-usage users (outliers), suggesting a segment of customers with intensive service consumption.
+
+![Call Minutes Distribution](assets/call_minutes_distribution.png)
+
+### Outlier Detection (Boxplots)
+
+Boxplots were used to identify extreme values across key user and usage variables. These visualizations provide insight into data dispersion and help distinguish between normal behavior and potential anomalies.
+
+---
+
+#### Age Distribution (Boxplot)  
+The age variable does not present significant outliers and remains within a realistic range. This indicates consistent and reliable demographic data.
+
+![Age Boxplot](assets/boxplot_age.png)
+
+---
+
+#### Messages Distribution (Boxplot)  
+The number of messages shows several outliers on the upper end, representing users with higher-than-average messaging activity. These values reflect real usage patterns rather than data errors.
+
+![Messages Boxplot](assets/boxplot_cant_mensajes.png)
+
+---
+
+#### Calls Distribution (Boxplot)  
+The number of calls also presents outliers on the right side, indicating a segment of users with high call frequency. These users represent potential high-value customers.
+
+![Calls Boxplot](assets/boxplot_cant_llamadas.png)
+
+---
+
+#### Call Minutes Distribution (Boxplot)  
+Call minutes show a strong presence of outliers, with some users exhibiting significantly higher usage. These values highlight heavy users and suggest opportunities for premium or usage-based plans.
+
+![Call Minutes Boxplot](assets/boxplot_cant_minutos_llamada.png)
 
 ---
 
